@@ -1,0 +1,3 @@
+def collatz(number):
+
+    if
