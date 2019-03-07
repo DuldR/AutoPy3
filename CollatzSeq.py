@@ -15,9 +15,12 @@ def collatz(number):
 request = input("Enter a number: ")
 
 # Setting initial iteration point
-iter = collatz(int(request))
+try:
+    iter = collatz(int(request))
 
-# Iterate over the given value to it reaches 1
-while iter != 1:
-    iter = collatz(iter)
+    # Iterate over the given value to it reaches 1
+    while iter != 1:
+        iter = collatz(iter)
 
+except:
+    print("Please enter a number")
